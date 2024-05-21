@@ -1,0 +1,39 @@
+.footerContainer {
+  background-color: #ffffff;
+  padding: 2rem 0;
+}
+
+.footerLogo {
+  position: relative;
+  width: 200px;
+  height: 63px;
+  cursor: pointer;
+}
+
+.footerLinks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 0.5rem;
+}
+
+.footerInput {
+  margin-bottom: 12px;
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
+.footerButton {
+  padding: 0.5rem 1rem;
+  background-color: #f50057;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

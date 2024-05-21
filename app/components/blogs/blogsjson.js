@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    src: "/assets/image1blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 2,
+    src: "/assets/image2blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 3,
+    src: "/assets/image3blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 4,
+    src: "/assets/image4blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 5,
+    src: "/assets/image5blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 6,
+    src: "/assets/image6blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 7,
+    src: "/assets/image7blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 8,
+    src: "/assets/image8blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 9,
+    src: "/assets/image9blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 10,
+    src: "/assets/image10blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 11,
+    src: "/assets/image11blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 12,
+    src: "/assets/image12blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 13,
+    src: "/assets/image13blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+  {
+    id: 14,
+    src: "/assets/image14blogpage.jpg",
+    name: "Image 1",
+    content: "This is image 1",
+  },
+];
