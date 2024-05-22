@@ -26,21 +26,23 @@
 }
 
 .navlinks {
-  text-decoration: none !important;
-  color: rgb(0, 0, 0) !important;
-  border: none !important;
-  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-transform: uppercase;
   font-weight: 600;
-  line-height: 24px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  border: none;
   transition: color 250ms ease-in-out;
 }
 
 .navlinks.selected {
-  color: #fa067c !important;
+  color: #e35640;
 }
 
 .navlinks:hover {
-  color: #fa067c !important;
+  color: #e35640;
 }
 
 .navbar_logo {

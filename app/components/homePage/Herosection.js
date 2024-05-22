@@ -17,7 +17,7 @@ function Herosection() {
               style={{
                 position: "relative",
                 width: "100%",
-                height: "765px",
+                height: "514px",
               }}
             >
               <Image
@@ -31,14 +31,7 @@ function Herosection() {
           <Grid item xs={12} md={8}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%",
-                    paddingBottom: "100%",
-                  }}
-                >
+                <div className="HeroSectionImagesHomepage">
                   <Image
                     src={Image2}
                     alt="Image 2"
@@ -48,14 +41,7 @@ function Herosection() {
                 </div>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%",
-                    paddingBottom: "100%",
-                  }}
-                >
+                <div className="HeroSectionImagesHomepage">
                   <Image
                     src={Image3}
                     alt="Image 3"
@@ -65,14 +51,7 @@ function Herosection() {
                 </div>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%",
-                    paddingBottom: "100%",
-                  }}
-                >
+                <div className="HeroSectionImagesHomepage">
                   <Image
                     src={Image4}
                     alt="Image 4"
@@ -82,14 +61,7 @@ function Herosection() {
                 </div>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%",
-                    paddingBottom: "100%",
-                  }}
-                >
+                <div className="HeroSectionImagesHomepage">
                   <Image
                     src={Image5}
                     alt="Image 5"

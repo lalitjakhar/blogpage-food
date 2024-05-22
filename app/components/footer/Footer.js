@@ -61,7 +61,7 @@ const Footer = () => {
             </ul>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" gutterBottom color={"brown"}>
               Follow Us
             </Typography>
             <Box>
@@ -79,7 +79,7 @@ const Footer = () => {
               </IconButton>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} color={"green"}>
             <Typography variant="h6" gutterBottom>
               Subscribe to our newsletter
             </Typography>
@@ -99,7 +99,7 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid container justifyContent="center" sx={{ mt: 2 }}>
-          <Typography variant="body1" align="center">
+          <Typography variant="body1" align="center" color={"red"}>
             {"Copyright © "}
             <Link href="/">Food Blogs</Link> {new Date().getFullYear()}
             {". All rights reserved."}

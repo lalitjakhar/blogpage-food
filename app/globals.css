@@ -37,7 +37,12 @@ body {
     text-wrap: balance;
   }
 }
-
+.HeroSectionImagesHomepage {
+  object-fit: cover;
+  width: 370px;
+  position: relative;
+  height: 249px;
+}
 .ImagesCategoriesFoodHomePage {
   object-fit: cover;
   width: 165px;

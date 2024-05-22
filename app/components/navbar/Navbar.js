@@ -4,7 +4,8 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Button, Container } from "@mui/material";
+import { Button, Container, IconButton, TextField } from "@mui/material";
+import { SearchRounded } from "@mui/icons-material";
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -30,6 +31,17 @@ const NavBar = () => {
                 </a>
               </Link>
             </div>
+            <div className="hidden md:flex">
+              <TextField
+                id="standard-basic"
+                color="error"
+                variant="standard"
+                type="search"
+              />
+              <IconButton type="button" sx={{ p: "6px", background: "red" }}>
+                <SearchRounded color="white" />
+              </IconButton>
+            </div>
             <Button
               className={`${styles.navbartogglerbtn} md:hidden ${
                 expanded ? styles.navbartogglerbtnExpanded : ""
@@ -39,11 +51,15 @@ const NavBar = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </Button>
+          </div>
+        </nav>
+        <nav className="bg-transparent">
+          <div className="flex items-center justify-between md:p-4">
             <div
               id="navbarScroll"
-              className={`w-full bg-white absolute top-full left-0 px-3 pb-3 md:static md:px-0 md:pb-0 md:flex-row items-center justify-end flex-0 flex-col ${
-                expanded ? "flex" : "hidden"
-              } md:flex`}
+              className={`w-full bg-white absolute top-full left-0 px-3 pb-3 md:static md:px-0 md:pb-0 md:flex-row items-center flex-0 flex-col ${
+                expanded ? "h-[192px]" : "h-0"
+              } overflow-hidden md:flex md:h-auto transition-all duration-700 ease-in-out`}
             >
               <div className="flex flex-col md:flex-row md:items-center md:mt-0 md:mb-0 gap-[10px] min-[991px]:gap-[32px] items-start mt-2.5 mb-2.5">
                 {[
