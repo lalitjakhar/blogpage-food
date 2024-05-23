@@ -9,7 +9,7 @@ import Image5 from "../../../public/assets/image2herohome.jpg";
 
 function Herosection() {
   return (
-    <div className="md:py-[56px] py-[26px]" style={{ background: "#FFFFFF" }}>
+    <div style={{ background: "#FFFFFF" }}>
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12} md={4}>
