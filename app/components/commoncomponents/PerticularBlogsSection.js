@@ -24,7 +24,8 @@ const PerticularBlogsSection = ({ data, isEvenBlog }) => {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        p={3}
+        gap={4}
+        p={5}
       >
         <Typography className="HeadTextRecipesDetail">{data.name}</Typography>
         <Typography className="ParaTextRecipesDetail">
