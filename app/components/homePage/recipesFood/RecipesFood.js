@@ -65,7 +65,7 @@ const RecipesFood = () => {
     <>
       <Box className="md:py-[56px] py-[26px]" sx={{ background: "#ffffff" }}>
         <Container>
-          <Typography className={styles.HeadingTypoRecipesHome}>
+          <Typography className="HeadingTypoRecipesHome">
             Recipes for true foodies
           </Typography>
           <Box className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
@@ -104,10 +104,10 @@ const RecipesFood = () => {
                     },
                   }}
                 >
-                  <Typography className={styles.HeadTextRecipesDetail}>
+                  <Typography className="HeadTextRecipesDetail">
                     {recipe.title}
                   </Typography>
-                  <Typography className={styles.ParaTextRecipesDetail}>
+                  <Typography className="ParaTextRecipesDetail">
                     {recipe.description}
                   </Typography>
                 </Box>

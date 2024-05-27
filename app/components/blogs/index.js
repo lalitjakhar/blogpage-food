@@ -8,19 +8,27 @@ const About = () => {
   return (
     <>
       <Hero />
-      <div className="md:py-[56px] py-[26px]" style={{ background: "#000000" }}>
-        <Container>
-          <Box sx={{ flexGrow: 1, padding: 2 }}>
-            <Grid container spacing={2}>
-              {blogsjson.map((json, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
-                  <Box sx={{ textAlign: "center", padding: 1 }}>
-                    <PerticularBlogsSection data={json} />
-                  </Box>
-                </Grid>
-              ))}
+      <div style={{ background: "#ffffff" }}>
+        <Container sx={{display: "flex", gap:5, flexDirection: "column"}}>
+          {blogsjson.map((json, index) => (
+            <Grid
+              container
+              key={index}
+              p={1}
+              sx={{
+                flexWrap: "nowrap",
+                flexDirection: {
+                  xs: "column",
+                  md: index % 2 === 0 ? "column" : "row",
+                },
+              }}
+            >
+              <PerticularBlogsSection
+                data={json}
+                isEvenBlog={index % 2 === 0}
+              />
             </Grid>
-          </Box>
+          ))}
         </Container>
       </div>
     </>

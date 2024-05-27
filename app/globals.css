@@ -75,7 +75,7 @@ body {
 }
 .ImagesBlogsPage {
   object-fit: cover;
-  width: 295px;
+  /* width: 1200px; */
   position: relative;
   height: 394px;
 }
@@ -103,4 +103,63 @@ body {
   font-family: "EB Garamond", serif;
   font-weight: 500;
   color: #000;
+}
+
+.HeadingTypoMainBlogPage {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 52px;
+  line-height: 1.19em;
+  margin: 25px 0;
+}
+
+.HeadingTypoRecipesHome {
+  font-family: "Dancing Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: #e35640;
+}
+
+.HeadTextRecipesDetail {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: #e35640;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.ParaTextRecipesDetail {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 25px;
+  line-height: 1.08em;
+}
+.DescriptionTextRecipesDetail {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #595959;
+}
+.ButtonBlogPage {
+  color: #fff;
+  background-color: #e35640;
+  border: 1px solid transparent;
+  position: relative;
+  display: inline-flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    border-color 0.2s ease-out;
+  padding: 10px 49px 8px;
+}
+.ButtonBlogPage:hover {
+  color: #e35640;
+  background-color: transparent;
+  border: 1px solid #e35640;
 }

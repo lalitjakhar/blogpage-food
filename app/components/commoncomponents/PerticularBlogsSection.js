@@ -1,11 +1,17 @@
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Button, Stack } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
-const PerticularBlogsSection = ({ data }) => {
+const PerticularBlogsSection = ({ data, isEvenBlog }) => {
   return (
-    <Box>
-      <div className="ImagesBlogsPage">
+    <>
+      <Box
+        className="ImagesBlogsPage"
+        sx={{
+          flexShrink: 0,
+          width: { xs: "100%", md: isEvenBlog ? "100%" : "50%" },
+        }}
+      >
         <Image
           src={data.src}
           alt={data.name}
@@ -13,12 +19,23 @@ const PerticularBlogsSection = ({ data }) => {
           objectFit="cover"
           draggable={false}
         />
-      </div>
-      <Typography variant="h6" sx={{ marginTop: 2 }}>
-        {data.name}
-      </Typography>
-      <Typography variant="body1">{data.content}</Typography>
-    </Box>
+      </Box>
+      <Stack
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        p={3}
+      >
+        <Typography className="HeadTextRecipesDetail">{data.name}</Typography>
+        <Typography className="ParaTextRecipesDetail">
+          {data.content}
+        </Typography>
+        <Typography className="DescriptionTextRecipesDetail">
+          {data.description}
+        </Typography>
+        <Button className="ButtonBlogPage">View More</Button>
+      </Stack>
+    </>
   );
 };
 
