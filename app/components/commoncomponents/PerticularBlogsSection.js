@@ -10,6 +10,13 @@ const PerticularBlogsSection = ({ data, isEvenBlog }) => {
         sx={{
           flexShrink: 0,
           width: { xs: "100%", md: isEvenBlog ? "100%" : "50%" },
+          overflow: "hidden",
+          "*": {
+            transition: "transform 200ms linear",
+          },
+          "&:hover img": {
+            transform: "scale(1.03) translateX(5px)",
+          },
         }}
       >
         <Image

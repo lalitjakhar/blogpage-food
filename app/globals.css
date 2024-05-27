@@ -75,9 +75,8 @@ body {
 }
 .ImagesBlogsPage {
   object-fit: cover;
-  /* width: 1200px; */
   position: relative;
-  height: 394px;
+  height: 594px;
 }
 .QuestionFaqSection {
   font-weight: 600;
@@ -146,8 +145,6 @@ body {
 }
 .ButtonBlogPage {
   color: #fff;
-  background-color: #e35640;
-  border: 1px solid transparent;
   position: relative;
   display: inline-flex;
   font-family: "Raleway", sans-serif;
@@ -157,6 +154,9 @@ body {
   transition: color 0.2s ease-out, background-color 0.2s ease-out,
     border-color 0.2s ease-out;
   padding: 10px 49px 8px;
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: #e35640;
 }
 .ButtonBlogPage:hover {
   color: #e35640;
