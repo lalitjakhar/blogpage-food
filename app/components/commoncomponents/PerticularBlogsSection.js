@@ -23,14 +23,21 @@ const PerticularBlogsSection = ({ data, isEvenBlog }) => {
       <Stack
         direction="column"
         justifyContent="center"
-        alignItems="center"
+        alignItems={isEvenBlog ? "center" : "flex-start"}
         gap={4}
         p={5}
       >
-        <Typography className="HeadTextRecipesDetail">{data.name}</Typography>
-        <Typography className="ParaTextRecipesDetail">
-          {data.content}
-        </Typography>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          alignItems={isEvenBlog ? "center" : "flex-start"}
+          gap={1}
+        >
+          <Typography className="HeadTextRecipesDetail">{data.name}</Typography>
+          <Typography className="ParaTextRecipesDetail">
+            {data.content}
+          </Typography>
+        </Box>
         <Typography className="DescriptionTextRecipesDetail">
           {data.description}
         </Typography>
