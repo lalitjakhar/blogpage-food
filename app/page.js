@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Herosection from "./components/homePage/Herosection";
 import CategoriesFood from "./components/homePage/categoriesFood/CategoriesFood";
 import RecipesFood from "./components/homePage/recipesFood/RecipesFood";
+import Newsletter from "./components/newsletter/Newsletter";
 
 const ClientsFood = dynamic(
   () => import("./components/homePage/clientsFood/ClientsFood"),
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="main">
       <Herosection />
+      <Newsletter />
       <RecipesFood />
       <ClientsFood />
       <CategoriesFood />
