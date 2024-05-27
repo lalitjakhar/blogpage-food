@@ -40,8 +40,8 @@ const PerticularBlogsSection = ({ data, isEvenBlog }) => {
           alignItems={isEvenBlog ? "center" : "flex-start"}
           gap={1}
         >
-          <Typography className="HeadTextRecipesDetail">{data.name}</Typography>
-          <Typography className="ParaTextRecipesDetail">
+          <Typography className="HeadNameRecipesDetail">{data.name}</Typography>
+          <Typography className="ParaContentRecipesDetail">
             {data.content}
           </Typography>
         </Box>
