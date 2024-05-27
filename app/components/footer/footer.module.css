@@ -1,6 +1,7 @@
 .footerContainer {
-  background-color: #ffffff;
-  padding: 2rem 0;
+  background-color: #f9f6f6;
+  background-image: url(https://braise.qodeinteractive.com/wp-content/uploads/2021/11/pattern-new.png);
+  background-size: auto;
 }
 
 .footerLogo {
@@ -8,16 +9,6 @@
   width: 200px;
   height: 63px;
   cursor: pointer;
-}
-
-.footerLinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footerLinks li {
-  margin-bottom: 0.5rem;
 }
 
 .footerInput {
@@ -36,4 +27,59 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.TextLinksFooterHome {
+  transition: color 0.2s ease-out;
+  font-family: "EB Garamond", serif;
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: lowercase;
+}
+.HoverTextFooterHome {
+  text-decoration: none;
+  color: #000;
+}
+.HoverTextFooterHome:hover {
+  color: #e35640;
+}
+
+.ParaTextThemeFooter {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
+  color: #595959;
+  text-align: center;
+}
+.ParaLinksTypoFooter {
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 500;
+  color: #505050;
+  text-decoration: none;
+}
+.ParaLinksTypoFooter a {
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 500;
+  color: #505050;
+  text-decoration: none;
+}
+.ParaLinksTypoFooter a:hover {
+  color: #e35640;
+}
+.customTextField::before {
+  border-bottom: none;
+}
+.customTextField::after {
+  border-bottom: none;
+}
+
+.TypoInputDescriptionFooter {
+  color: #919191;
+  font-size: 13px;
+  font-style: italic;
+  text-align: left;
+  margin-top: 5px;
 }
