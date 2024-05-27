@@ -1,7 +1,6 @@
 import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import styles from "./comingsoon.module.css";
-import Link from "next/link";
 import CountdownTimer from "../countdowntimer/CountdownTimer";
 
 const Hero = () => {
@@ -18,7 +17,7 @@ const Hero = () => {
               eiusmod tempor inci didunt ut labore e dolore magna aliqua. Ut
               enim ad minim. quis nostrud exer citation ullamco laboris.
             </Typography>
-            <CountdownTimer targetDate="2024-12-31T00:00:00" />
+            <CountdownTimer targetDate="2025-04-03T12:00:00" />
             <Button className="ButtonBlogPage" href="/">
               HomePage
             </Button>
