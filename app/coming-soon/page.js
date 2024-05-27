@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/orders/Hero";
+import Hero from "../components/coming-soon/Hero";
 
 const page = () => {
   return (
