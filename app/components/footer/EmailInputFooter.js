@@ -1,11 +1,12 @@
 "use client";
-import { IconButton, TextField } from "@mui/material";
+import { IconButton, TextField, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import NearMeSharpIcon from "@mui/icons-material/NearMeSharp";
 
 const EmailInputFooter = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
 
   const handleEmailChange = (event) => {
     const value = event.target.value;
@@ -32,7 +33,7 @@ const EmailInputFooter = () => {
           placeholder="Enter Your Email Address here"
           helperText={error ? "The e-mail address entered is invalid." : ""}
           error={error}
-          style={{ width: "350px" }}
+          style={{ width: isSmallScreen ? "auto" : "350px" }}
           value={email}
           onChange={handleEmailChange}
           sx={{
