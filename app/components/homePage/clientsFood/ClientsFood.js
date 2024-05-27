@@ -51,7 +51,7 @@ const ClientsFood = () => {
       <div className="md:py-[56px] py-[26px]" style={{ background: "#FFFFFF" }}>
         <Container>
           <div className="row">
-            <div className="col-12 pt-[24px] sm:pt-[72px]">
+            <div className="col-12">
               <Slider ref={sliderRef} {...settings}>
                 {clientsItem.map((item, index) => (
                   <div key={index} className="px-2">
