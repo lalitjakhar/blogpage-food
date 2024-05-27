@@ -1,8 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import styles from "./newsletter.module.css";
-import EmailInputFooter from "../footer/EmailInputFooter";
 import Image from "next/image";
+import EmailInputFooter from "../../footer/EmailInputFooter";
 
 const Newsletter = () => {
   return (

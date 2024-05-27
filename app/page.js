@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Herosection from "./components/homePage/Herosection";
 import CategoriesFood from "./components/homePage/categoriesFood/CategoriesFood";
 import RecipesFood from "./components/homePage/recipesFood/RecipesFood";
-import Newsletter from "./components/newsletter/Newsletter";
+import Newsletter from "./components/homePage/newsletter/Newsletter";
 
 const ClientsFood = dynamic(
   () => import("./components/homePage/clientsFood/ClientsFood"),
