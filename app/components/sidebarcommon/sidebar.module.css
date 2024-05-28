@@ -45,3 +45,44 @@
   font-size: 30px;
   color: #e35640;
 }
+
+.HeadingLatestRecipes {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 25px;
+  line-height: 1.08em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-wrap: nowrap;
+  gap: 8px;
+}
+.HeadingLatestRecipes::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 18px;
+  left: 0;
+  background-color: #dfdfdf;
+  display: inline-block;
+}
+.LatestRecipesImage {
+  width: 130px;
+  height: 147px;
+  position: relative;
+  object-fit: cover;
+}
+.HeadingBlogLatestRecipes {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 20px;
+}
+.ParaDateBlogLatestRecipes {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #595959;
+}
