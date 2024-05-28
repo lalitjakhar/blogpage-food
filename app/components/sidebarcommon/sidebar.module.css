@@ -100,3 +100,10 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
+.HeadingSubscribeSidebar {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.08em;
+}

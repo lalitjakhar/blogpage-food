@@ -9,7 +9,7 @@ const WorkImageSection = () => {
       <Box
         sx={{
           position: "relative",
-          width: "383px",
+          width: "100%",
           height: "187px",
           overflow: "hidden",
           margin: "0 0 65px",
