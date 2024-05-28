@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const ContactUs = () => {
   return (
     <>
       <div>ContactUsPage</div>
@@ -8,4 +8,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default ContactUs;

@@ -1,10 +1,10 @@
+import ContactUs from "@/app/components/contact-us/ContactUs";
 import React from "react";
-import Hero from "../components/contact-us/Hero";
 
 const ContactUsPage = () => {
   return (
     <>
-      <Hero />
+      <ContactUs />
     </>
   );
 };

@@ -157,9 +157,9 @@ const NavBar = () => {
                   {[
                     { href: "/", label: "Home" },
                     { href: "/about-us", label: "About Us" },
+                    { href: "/contact-us", label: "Contact Us" },
                     { href: "/blogs", label: "Blogs" },
                     { href: "/coming-soon", label: "Coming Soon" },
-                    { href: "/contact-us", label: "Contact Us" },
                   ].map(({ href, label }) => (
                     <Link key={href} href={href} passHref legacyBehavior>
                       <a
