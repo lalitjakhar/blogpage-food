@@ -1,9 +1,8 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import styles from "./about.module.css";
 import Image from "next/image";
-import Newsletter from "../homePage/newsletter/Newsletter";
-import EmailInputFooter from "../footer/EmailInputFooter";
+import SubscribeAbout from "./SubscribeAbout";
 
 const AboutUs = () => {
   return (
@@ -66,47 +65,7 @@ const AboutUs = () => {
             amet, consectetur adipicibe elit, sed do eiusmod.
           </Typography>
         </Box>
-        <Box className="md:py-[30px] py-[10px]" bgcolor={"white"}>
-          <Container maxWidth="lg" className={styles.SubscribeSectionContainer}>
-            <Box sx={{ border: "1px solid red" }}>
-              <Box sx={{ padding: "42px 0px" }}>
-                <Grid container alignItems={"center"}>
-                  <Grid
-                    item
-                    xs={12}
-                    md={6}
-                    display={"flex"}
-                    gap={"0px"}
-                    alignItems={"center"}
-                  >
-                    <Box className={styles.ImageSubscribeLeafAboutUs}>
-                      <Image
-                        src={"/assets/subscribeleafabout.svg"}
-                        alt="leafimg"
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </Box>
-                    <Box className={styles.ImageSubscribeAboutUs}>
-                      <Image
-                        src={"/assets/subscribeimageabout.png"}
-                        alt="subscribeimageabout"
-                        layout="fill"
-                        objectFit="cover"
-                      />
-                    </Box>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <Typography className={styles.ParaTypoSubscribeAbout}>
-                      My new book is out. Enjoy every meal!
-                    </Typography>
-                    <EmailInputFooter />
-                  </Grid>
-                </Grid>
-              </Box>
-            </Box>
-          </Container>
-        </Box>
+        <SubscribeAbout />
         <Typography className={styles.ParaImageAboutContent}>
           Eiusmod tempor inci didunt ut labore e dolore magna aliqua. Ut enim ad
           minim. quis nostrud exer ad citation ullamco laboris nisi ut aliquip

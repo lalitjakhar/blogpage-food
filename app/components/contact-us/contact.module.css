@@ -1,0 +1,48 @@
+.HeadingContentContactUs {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 44px;
+  line-height: 1.08em;
+}
+.ParaContentContactUs {
+  font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 400;
+  color: #595959;
+}
+
+.HeadingContactFaq {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 44px;
+  line-height: 1.08em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-wrap: nowrap;
+  gap: 8px;
+}
+.HeadingContactFaq::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 18px;
+  left: 0;
+  background-color: #dfdfdf;
+  display: inline-block;
+}
+.QuestionContactFaq {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 25px;
+}
+.AnswerContactFaq {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #595959;
+}
