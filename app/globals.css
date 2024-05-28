@@ -178,3 +178,9 @@ body {
   background-color: transparent;
   border: 1px solid #e35640;
 }
+
+/***********************AboutContactContainer***************************/
+.AboutContactContainer {
+  padding: 115px 0px 50px 0px;
+  background-color: #fff;
+}

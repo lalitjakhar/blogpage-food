@@ -1,3 +1,19 @@
-const Layout = ({children}) => <>This is a Layout {children}</>
+import { Box, Container, Grid } from "@mui/material";
+import AboutContactCommon from "../components/commoncomponents/AboutContactCommon";
 
-export default Layout
+const Layout = ({ children }) => (
+  <Box className="AboutContactContainer">
+    <Container maxWidth="lg">
+      <Grid container>
+        <Grid item xs={12} md={8}>
+          {children}
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <AboutContactCommon />
+        </Grid>
+      </Grid>
+    </Container>
+  </Box>
+);
+
+export default Layout;
