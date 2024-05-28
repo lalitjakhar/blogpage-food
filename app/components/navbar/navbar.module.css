@@ -69,9 +69,10 @@
   font-size: 15px;
   line-height: 1.6em;
   font-weight: 400;
+  text-transform: none;
   color: #595959;
   background-color: #ffffff;
-  border: 1px solid #757575;
+  border: 1px solid #eeedeb;
 }
 
 @media (max-width: 767px) {

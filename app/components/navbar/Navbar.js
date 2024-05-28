@@ -93,26 +93,26 @@ const NavBar = () => {
                   </a>
                 </Link>
               </div>
-              <div className="hidden md:flex">
+              <div className="hidden md:flex items-end">
                 <TextField
                   id="standard-basic"
-                  color="error"
                   variant="standard"
                   type="search"
+                  placeholder="Search"
+                  InputProps={{
+                    disableUnderline: true,
+                  }}
                   sx={{
-                    "& .MuiInputBase-root": { color: "inherit" },
-                    "& .MuiInput-underline:before": {
-                      borderBottomColor: "#e0e0e0",
-                    },
-                    "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
-                      borderBottomColor: "#b0b0b0",
-                    },
-                    "& .MuiInput-underline:after": {
-                      borderBottomColor: "#e35640",
+                    "& .MuiInputBase-root": {
+                      color: "#686868",
+                      borderBottom: "1px solid #e0e0e0",
                     },
                     "& .Mui-focused": { backgroundColor: "transparent" },
                     "& .MuiInputBase-input:focus": {
                       backgroundColor: "transparent",
+                    },
+                    "& .MuiInputBase-input::placeholder": {
+                      color: "#595959",
                     },
                   }}
                 />
@@ -121,10 +121,10 @@ const NavBar = () => {
                   sx={{
                     color: "#ffffff",
                     backgroundColor: "#e35640",
+                    border: "1px solid #e35640",
                     "&:hover": {
                       color: "#e35640",
                       backgroundColor: "transparent",
-                      border: "1px solid #e35640",
                     },
                   }}
                 >
@@ -143,7 +143,10 @@ const NavBar = () => {
             </div>
           </nav>
           <nav className="bg-transparent">
-            <div className="flex items-center h-[60px]">
+            <div
+              className="flex items-center h-[60px]"
+              style={{ borderBottom: "1px solid #eeedeb" }}
+            >
               <div
                 id="navbarScroll"
                 className={`w-full bg-white absolute top-full left-0 px-3 pb-3 md:static md:px-0 md:pb-0 md:flex-row items-center flex-0 flex-col ${

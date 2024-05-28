@@ -1,20 +1,8 @@
-import React, { useState } from "react";
-import { Badge, Menu, Typography } from "@mui/material";
+import React from "react";
+import { Typography } from "@mui/material";
 import styles from "./navbar.module.css";
 
 const CartDropdown = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleMouseEnter = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMouseLeave = (event) => {
-    if (!event.currentTarget.contains(event.relatedTarget)) {
-      setAnchorEl(null);
-    }
-  };
-
   return (
     <>
       <Typography
@@ -32,7 +20,11 @@ const CartDropdown = () => {
       >
         Cart (0)
         <Typography
-          sx={{ padding: "16px", display: "none", top: "calc(100% + 32px)" }}
+          sx={{
+            padding: "30px",
+            display: "none",
+            top: "calc(100% + 21px)",
+          }}
           className={`${styles.TextDropdownCart} cart-hover-box absolute right-0`}
         >
           No products in the cart.

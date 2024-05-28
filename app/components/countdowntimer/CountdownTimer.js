@@ -18,6 +18,10 @@ const CountdownTimer = ({ targetDate }) => {
       };
     }
 
+    for (const unit in timeLeft) {
+      timeLeft[unit] = String(timeLeft[unit]).padStart(2, "0");
+    }
+
     return timeLeft;
   };
 
@@ -36,31 +40,31 @@ const CountdownTimer = ({ targetDate }) => {
       <Box className="flex space-x-4 text-center">
         <Box className="p-4 rounded">
           <Typography className={styles.HeadingCountDown}>
-            {timeLeft.weeks || "0"}
+            {timeLeft.weeks || "00"}
           </Typography>
           <Typography className={styles.ParaCountDown}>Weeks</Typography>
         </Box>
         <Box className="p-4 rounded">
           <Typography className={styles.HeadingCountDown}>
-            {timeLeft.days || "0"}
+            {timeLeft.days || "00"}
           </Typography>
           <Typography className={styles.ParaCountDown}>Days</Typography>
         </Box>
         <Box className="p-4 rounded">
           <Typography className={styles.HeadingCountDown}>
-            {timeLeft.hours || "0"}
+            {timeLeft.hours || "00"}
           </Typography>
           <Typography className={styles.ParaCountDown}>Hours</Typography>
         </Box>
         <Box className="p-4 rounded">
           <Typography className={styles.HeadingCountDown}>
-            {timeLeft.minutes || "0"}
+            {timeLeft.minutes || "00"}
           </Typography>
           <Typography className={styles.ParaCountDown}>Minutes</Typography>
         </Box>
         <Box className="p-4 rounded">
           <Typography className={styles.HeadingCountDown}>
-            {timeLeft.seconds || "0"}
+            {timeLeft.seconds || "00"}
           </Typography>
           <Typography className={styles.ParaCountDown}>Seconds</Typography>
         </Box>
