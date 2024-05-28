@@ -99,13 +99,30 @@ const NavBar = () => {
                   color="error"
                   variant="standard"
                   type="search"
+                  sx={{
+                    "& .MuiInputBase-root": { color: "inherit" },
+                    "& .MuiInput-underline:before": {
+                      borderBottomColor: "#e0e0e0",
+                    },
+                    "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
+                      borderBottomColor: "#b0b0b0",
+                    },
+                    "& .MuiInput-underline:after": {
+                      borderBottomColor: "#e35640",
+                    },
+                    "& .Mui-focused": { backgroundColor: "transparent" },
+                    "& .MuiInputBase-input:focus": {
+                      backgroundColor: "transparent",
+                    },
+                  }}
                 />
                 <IconButton
                   type="submit"
                   sx={{
-                    p: "6px",
+                    color: "#ffffff",
                     backgroundColor: "#e35640",
                     "&:hover": {
+                      color: "#e35640",
                       backgroundColor: "transparent",
                       border: "1px solid #e35640",
                     },
