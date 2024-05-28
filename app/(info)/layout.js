@@ -4,7 +4,7 @@ import AboutContactCommon from "../components/commoncomponents/AboutContactCommo
 const Layout = ({ children }) => (
   <Box className="AboutContactContainer">
     <Container maxWidth="lg">
-      <Grid container>
+      <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
           {children}
         </Grid>
