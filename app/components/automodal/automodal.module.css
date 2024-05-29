@@ -1,0 +1,57 @@
+.AutoModalContainer {
+  border: none;
+}
+.AutoModalBox {
+  padding: 13px;
+  background-color: #f9f6f6;
+  background-image: url(https://braise.qodeinteractive.com/wp-content/uploads/2021/11/pattern-new.png);
+  background-size: auto;
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 892px;
+  box-shadow: 24px;
+}
+.ContentBoxAutoModal {
+  padding: 35px 95px 35px 57px;
+  border: 1px solid #e35640;
+}
+.HeadingTypoAutoModal {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 38px;
+  line-height: 1.1em;
+  text-align: center;
+  max-width: 950px;
+  margin: 20px 0 11px 0;
+}
+
+.DescriptionTextAutoModal {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #595959;
+  text-align: center;
+  margin: 0 0 52px 0;
+}
+.ImagePopupHidden {
+  display: flex;
+}
+@media (max-width: 898px) {
+  .ImagePopupHidden {
+    display: none;
+  }
+}
+
+.ImagePopupAutoModal {
+  object-fit: cover;
+  width: 254px;
+  position: relative;
+  height: 322px;
+}

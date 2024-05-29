@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import GoToTopButton from "./components/gototopbutton/GoToTopButton";
+import AutoModal from "./components/automodal/AutoModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <GoToTopButton />
+        <AutoModal />
       </body>
     </html>
   );
