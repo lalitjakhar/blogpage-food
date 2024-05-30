@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <Box component="footer" className={styles.footerContainer}>
       <Box className="md:py-[56px] py-[26px]">
-        <Container maxWidth="xs">
+        <div className="custom-container">
           <Box className="flex flex-col gap-4 items-center">
             <Link href="/" draggable={false}>
               <div className={styles.footerLogo}>
@@ -52,11 +52,11 @@ const Footer = () => {
               </Typography>
             </Box>
           </Box>
-        </Container>
+        </div>
       </Box>
       <Divider />
       <Box className="md:py-[20px] py-[5px]">
-        <Container maxWidth="lg">
+        <div className="custom-container">
           <Box className="flex justify-between">
             <Typography className={styles.ParaLinksTypoFooter}>
               <Link href="https://braise.qodeinteractive.com/privacy-policy/">
@@ -72,7 +72,7 @@ const Footer = () => {
               {" All rights reserved."}
             </Typography>
           </Box>
-        </Container>
+        </div>
       </Box>
     </Box>
   );

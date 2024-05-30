@@ -3,7 +3,7 @@ import AboutContactCommon from "../components/commoncomponents/AboutContactCommo
 
 const Layout = ({ children }) => (
   <Box className="AboutContactContainer">
-    <Container maxWidth="lg">
+    <div className="custom-container">
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
           {children}
@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
           <AboutContactCommon />
         </Grid>
       </Grid>
-    </Container>
+    </div>
   </Box>
 );
 

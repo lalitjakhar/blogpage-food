@@ -8,7 +8,7 @@ const SubscribeAbout = () => {
   return (
     <>
       <Box className="md:py-[30px] py-[10px]" bgcolor={"white"}>
-        <Container maxWidth="lg" className={styles.SubscribeSectionContainer}>
+        <div className={`${styles.SubscribeSectionContainer} custom-container`}>
           <Box sx={{ border: "1px solid red" }}>
             <Box sx={{ padding: "42px 0px" }}>
               <Grid container alignItems={"center"}>
@@ -53,7 +53,7 @@ const SubscribeAbout = () => {
               </Grid>
             </Box>
           </Box>
-        </Container>
+        </div>
       </Box>
     </>
   );

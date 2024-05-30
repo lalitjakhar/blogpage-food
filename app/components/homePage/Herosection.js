@@ -10,8 +10,8 @@ import Image5 from "../../../public/assets/image2herohome.jpg";
 function Herosection() {
   return (
     <div style={{ background: "#FFFFFF" }}>
-      <Container>
-        <Grid container spacing={2}>
+      <div className="custom-container">
+        <Grid container spacing={1}>
           <Grid item xs={12} md={4}>
             <div
               style={{
@@ -73,7 +73,7 @@ function Herosection() {
             </Grid>
           </Grid>
         </Grid>
-      </Container>
+      </div>
     </div>
   );
 }

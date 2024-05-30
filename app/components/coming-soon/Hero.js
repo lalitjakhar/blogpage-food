@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <Box sx={{ padding: "93px 0px 140px 0px", backgroundColor: "white" }}>
-        <Container maxWidth="lg">
+        <div className="custom-container">
           <Box className="flex flex-col gap-4 items-center">
             <Typography className={styles.HeadingComingSoonPage}>
               Coming soon
@@ -22,7 +22,7 @@ const Hero = () => {
               HomePage
             </Button>
           </Box>
-        </Container>
+        </div>
       </Box>
     </>
   );

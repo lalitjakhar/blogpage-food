@@ -64,7 +64,7 @@ const RecipesFood = () => {
   return (
     <>
       <Box className="md:py-[56px] py-[26px]" sx={{ background: "#ffffff" }}>
-        <Container>
+        <div className="custom-container">
           <Typography className="HeadingTypoRecipesHome">
             Recipes for true foodies
           </Typography>
@@ -114,7 +114,7 @@ const RecipesFood = () => {
               </Box>
             ))}
           </Box>
-        </Container>
+        </div>
       </Box>
     </>
   );

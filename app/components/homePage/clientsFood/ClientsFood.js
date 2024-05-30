@@ -49,7 +49,7 @@ const ClientsFood = () => {
   return (
     <>
       <div className="md:py-[56px] py-[26px]" style={{ background: "#FFFFFF" }}>
-        <Container>
+        <div className="custom-container">
           <div className="row">
             <div className="col-12">
               <Slider ref={sliderRef} {...settings}>
@@ -81,7 +81,7 @@ const ClientsFood = () => {
               </Slider>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </>
   );

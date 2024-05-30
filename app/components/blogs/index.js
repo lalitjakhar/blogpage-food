@@ -9,7 +9,10 @@ const About = () => {
     <>
       <Hero />
       <div style={{ background: "#ffffff" }}>
-        <Container sx={{ display: "flex", gap: 5, flexDirection: "column" }}>
+        <div
+          className="custom-container"
+          sx={{ display: "flex", gap: 5, flexDirection: "column" }}
+        >
           {blogsjson.map((json, index) => (
             <Grid
               container
@@ -29,7 +32,7 @@ const About = () => {
               />
             </Grid>
           ))}
-        </Container>
+        </div>
       </div>
     </>
   );

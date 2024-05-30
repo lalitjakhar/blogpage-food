@@ -25,7 +25,7 @@ const CartDropdown = () => {
             display: "none",
             top: "calc(100% + 21px)",
           }}
-          className={`${styles.TextDropdownCart} cart-hover-box absolute right-0`}
+          className={`${styles.TextDropdownCart} cart-hover-box absolute right-[-4px]`}
         >
           No products in the cart.
         </Typography>

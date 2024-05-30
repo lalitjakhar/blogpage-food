@@ -56,15 +56,15 @@ body {
 }
 .HeroSectionImagesHomepage {
   object-fit: cover;
-  width: 370px;
+  width: 100%;
   position: relative;
   height: 249px;
 }
 .ImagesCategoriesFoodHomePage {
   object-fit: cover;
-  width: 165px;
+  width: 196px;
   position: relative;
-  height: 195px;
+  height: 196px;
 }
 
 .Image1AboutusPage {
