@@ -14,7 +14,7 @@ const CategoriesFood = () => {
       src: "/assets/image3blogpage.jpg",
     },
     {
-      src: "/assets/image42blogpage.jpg",
+      src: "/assets/image2blogpage.jpg",
     },
     {
       src: "/assets/image5blogpage.jpg",
